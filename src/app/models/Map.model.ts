@@ -11,12 +11,12 @@ export interface IGeoJson {
 }
 
 export class GeoJson implements IGeoJson {
-  type = 'Feature';
+  type = 'feature';
   geometry: IGeometry;
 
   constructor(coordinates, public properties?) {
     this.geometry = {
-      type: 'Point',
+      type: 'point',
       coordinates: coordinates
     }
   }

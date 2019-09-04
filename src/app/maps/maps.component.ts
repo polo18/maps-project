@@ -89,11 +89,9 @@ export class MapsComponent implements OnInit, OnDestroy {
       /// get source
       this.source = this.map.getSource('firebase')
 
-      console.log(this.source);
       /// subscribe to realtime database and set data source
       this.mapService.markersSubject.subscribe(
       	(markers) => {
-      		console.log(this.markers);
         	let data = new FeatureCollection(markers)
       		this.source.setData(data)
       	}

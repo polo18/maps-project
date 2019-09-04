@@ -7,9 +7,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { SigninComponent } from './auth/signin/signin.component';
-import { BookListComponent } from './book-list/book-list.component';
-import { BookFormComponent } from './book-list/book-form/book-form.component';
-import { SingleBookComponent } from './book-list/single-book/single-book.component'; 
 import { HeaderComponent } from './header/header.component';
 import { MapsComponent } from './maps/maps.component';
 
@@ -29,11 +26,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SignupComponent,
-    BookListComponent,
-    BookFormComponent,
     HeaderComponent,
     SigninComponent,
-    SingleBookComponent,
     MapsComponent,
   ],
   imports: [
