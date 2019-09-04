@@ -3,7 +3,21 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  config: {
+    apiKey: "AIzaSyAe0ScqtiKfcx-8VAA2WGB0jaqp5CK2x2A",
+    authDomain: "map-project-660a8.firebaseapp.com",
+    databaseURL: "https://map-project-660a8.firebaseio.com",
+    projectId: "map-project-660a8",
+    storageBucket: "",
+    messagingSenderId: "807421239776",
+    appId: "1:807421239776:web:2ccca8785c1745bd"
+  },
+
+  mapbox: {
+  	accessToken: 'pk.eyJ1IjoicG9sbzkyIiwiYSI6ImNrMDU1Z2V1ajJ1ejYzb3E5NDRtcHFwbzUifQ.VN4RFuwH-_kX0Q-JqtzwLQ'
+  }
 };
 
 /*

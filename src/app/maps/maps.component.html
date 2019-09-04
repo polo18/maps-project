@@ -1,0 +1,35 @@
+<h2 class="text-center">Choose your favorite place</h2>
+<hr/>
+<div class="alert alert-info">
+  <strong>NB:</strong> To add and save your favorite place, first write the name of the place in the field, then click on the map and wait for 1 min.
+</div>
+<br>
+
+<div class="form-group">
+	<label>Name of place</label>	
+	<input type="text" [(ngModel)]="message" placeholder="Name of place..." class="form-control">
+</div>
+
+<div class="map" id="map"></div>
+<br>
+<div class="container-fluid">
+  <table class="table table-condensed">
+  	<thead>
+  		<tr>
+  			<th>Go To place</th>
+  			<th>Name of place</th>
+  			<th>Coordinates</th>
+  			<th>Action</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr *ngFor="let marker of markers">
+  			<td><a (click)="flyTo(marker)">Go-></a></td>  				
+  			<td>{{ marker.properties.message }}</td>  				
+  			<td>lat:{{marker.geometry.coordinates[0]}} | lang:{{marker.geometry.coordinates[0]}}</td>		
+  			<td><button (click)="removeMarker(marker)" class="btn btn-danger btn-sm">Delete</button></td>
+  		</tr>
+  	</tbody>
+  </table> 
+</div>
+
