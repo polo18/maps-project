@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
+## Config
+
+in `src/environments/environment.ts` make your configuration of firebase https://console.firebase.google.com and your API Key of mapbox https://www.mapbox.com/ 
+
 ## Install 
 
 Run `npm install -g @angular/cli` to run the project.
